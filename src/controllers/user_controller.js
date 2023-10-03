@@ -174,6 +174,7 @@ userController.createUser = (req, res) => {
                                 username: data.username,
                                 email: data.email,
                                 password: hash,
+                                id_type_user:3
                             }).then((user) => {
                                 res.json(response({
                                     status: 'SUCCESS',
